@@ -1,4 +1,3 @@
-/// <reference types="react" />
 declare type MapSignal = 'map-redraw' | 'map-lock' | 'map-unlock' | 'map-click' | 'map-contextmenu' | 'map-focus' | 'map-blur' | 'zoom-start' | 'zoom-range-change' | 'zoom-step' | 'zoom-stop' | 'rotation-start' | 'rotation-step' | 'rotation-stop' | 'map-pan' | 'center-start' | 'center-stop' | 'port-sync';
 declare type MapLayerSignal = 'layer-enable' | 'layer-disable' | 'tileset-load';
 declare type MapKeyboardSignal = 'control-keyboard-move' | 'control-keyboard-zoom';

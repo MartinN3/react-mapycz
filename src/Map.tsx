@@ -63,10 +63,11 @@ const Map = (props: MapProps) => {
 
   useEffect(() => {
     if (map && center) {
-      const centerCoords = window.SMap.Coords.fromWGS84(center.lng, center.lat);
-      map.setCenter(centerCoords, animateCenterZoom);
+      const centerCoords = window.SMap.Coords.fromWGS84(center.lng, center.lat)
+      map.setCenter(centerCoords, animateCenterZoom)
+      zoom !== undefined && map.setZoom(zoom)
     }
-  }, [center]);
+  }, [map, center, zoom]);
 
   useImperativeHandle(props.mapRef, () => map);
 
